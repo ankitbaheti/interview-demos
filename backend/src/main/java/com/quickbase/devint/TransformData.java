@@ -21,4 +21,11 @@ public interface TransformData {
      * @return             A map of countries and its population from both the list.
      */
     Map<String, Integer> mergeListsOfPopulation(Map<String, Integer> databaseList, List<Pair<String, Integer>> apiList);
+
+    /**
+     * If the name of the country is in different form, then it return a common name.
+     * @param countryName name of a country
+     * @return a common name for that country.
+     */
+    String similarCountryName(String countryName);
 }

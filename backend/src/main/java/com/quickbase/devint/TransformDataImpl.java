@@ -45,7 +45,8 @@ public class TransformDataImpl implements TransformData {
      * @param countryName name of a country
      * @return a common name for that country.
      */
-    private String similarCountryName(String countryName) {
+    @Override
+    public String similarCountryName(String countryName) {
         if(countryName.equals("United States of America") || countryName.equals("U.S.A."))
             return "U.S.A.";
         return countryName;
